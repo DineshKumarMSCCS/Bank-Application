@@ -1,0 +1,87 @@
+
+.ride {
+  animation: rideAnimation 3s linear infinite; /* Adjust the duration as needed */
+  white-space: nowrap;
+  font-family: 'Courier New', monospace;
+  font-weight: 2000;
+  font-size: 28px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-shadow: 8px 8px 9px rgba(250, 246, 246, 0.732);
+  color: rgb(249, 248, 249);
+   
+}
+
+@keyframes rideAnimation {
+  0% {
+    /* Define the initial state of your animation */
+    transform: translateX(0);
+  }
+
+  50% {
+    /* Define a midpoint state if desired */
+    transform: translateX(50px); /* Adjust as needed */
+  }
+
+  100% {
+    /* Define the final state of your animation */
+    transform: translateX(100px);
+  }
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.text img {
+  max-width: 100%; /* Make sure the image is responsive */
+}
+
+.text h2,
+.text h3{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.text h3{
+  color:rgb(19, 22, 4);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+.center-container {
+  text-align: center;
+}
+
+.get-started-button {
+  display: inline-block;
+  width: 150px;
+  padding: 10px;
+  margin: 20px 10px; /* Adjusted margin for spacing between buttons */
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(31, 100, 40, 0.3);
+  border-radius: 10px;
+  transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease;
+}
+
+.get-started-button:hover {
+  background-color: rgba(49, 26, 125, 0.4); /* Adjusted hover background color */
+}
+
+.centered {
+  text-align: center;
+  color: #fa0606; /* You can change the color to your preference */
+  margin-left: 100%;/* Adjust the left margin as needed */
+}
+
+/* Remove the following lines as they are not applicable to inline-block elements */
+/* display: block; */
+/* align-items: center; */
+
